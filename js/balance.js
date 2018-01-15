@@ -27,4 +27,15 @@ function AnimateBar(amt, total, mod)
 	}
 };
 
+function calculateeth()
+{
+  var amt = document.getElementById("willamt").value;
+  var rate = 7000;
+  var eth = 0;
+    var eth = Math.floor(amt/7000 * 1e18)
+    eth = eth/1e18;
+    document.getElementById("sendamt").innerHTML = "Send " + eth + " ETH to the following address:";
+    document.getElementById("sendamt").style.display = "inline-block"
+}
+
 loadBalance();

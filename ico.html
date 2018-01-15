@@ -57,6 +57,7 @@
         <div class="intro-text">
           <div class="intro-lead-in">ICO Launch</div>
           <div class="intro-heading text-uppercase">Coming soon</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#purchase">Purchase Tokens</a>
         </div>
       </div>
     </header>
@@ -66,7 +67,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase" id="countdown">ICO Launch: </h2>
+            <h2 class="section-heading text-uppercase" id="countdown">Token Generation Event: </h2>
             <img src="img/logo.png">
             <h5 class="section-subheading text-uppercase" id="f"></h5>           
           </div>
@@ -91,13 +92,56 @@
       </div>
     </section>
 
+
+    <section  id="purchase" style="padding-top: 15px !important">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center" style="padding-bottom: 30px">
+            <h2 class="section-heading text-uppercase">Purchase Tokens</h2>        
+              <h5 class="section-subheading text-uppercase" style="padding-top:20px">Rate: 1 ETH = 7000 WILL</h5>
+        </div>
+      <div class="col-lg-6 text-center" style="padding-left: 0">Enter the amount of Willcoin you would like to purchase: </div>
+      <div class="col-lg-2 text-center" style="padding-right: 0">
+        <input type="text" id="willamt" class="form-control" placeholder="7000">
+      </div>
+      <div class="col-lg-2 text-center">
+        <button type="button" class="btn btn-secondary" onclick="calculateeth()">Calculate</button>
+      </div>
+          <div class="col-lg-12 text-center" style="padding-top: 30px">
+              <h5 class="section-subheading text-uppercase" id="sendamt" style="padding-top:20px;display: none;">Send {amt} ETH to the following address:</h5>
+            </div>
+          </div>
+        </div>
+    </section>
         <!-- Services -->
-    <section  id="details" style="padding-top: 15px !important">
+    <section class="bg-light" id="details" style="padding-top: 15px !important">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">ICO Details</h2>
+            <h2 class="section-heading text-uppercase">Launch Details</h2>
+                        <h5 class="section-subheading text-uppercase" style="padding-top:30px" id="balance">Coin Distribution</h5>
            <img style="display:block; max-width: 100%; height: auto; padding-top:30px" src="img/chart.png" />
+                        <h5 class="section-subheading text-uppercase" style="padding-top:50px" id="balance">ICO Guide</h5>
+
+        <table class="table table-hover table-bordered" style="margin-top: 20px">
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <th style="font-weight: normal;">Download your favorite ethereum based wallet</th>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Store your wallet's private keys for security in a asafe place</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Calculate the amount of ethereum based on the amount of willcoin you would like using the calculator above</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>The ICO smart contract will automatically send Willcoins to your address</td>
+            </tr>          </tbody>
+        </table>
           </div>
         </div>
       </div>
