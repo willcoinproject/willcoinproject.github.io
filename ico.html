@@ -55,8 +55,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">ICO Launch</div>
-          <div class="intro-heading text-uppercase">Coming soon</div>
+          <div class="intro-heading text-uppercase">ICO Launch</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#purchase">Purchase Tokens</a>
         </div>
       </div>
@@ -65,9 +64,9 @@
     <!-- Services -->
     <section id="product" style="padding-top: 15px !important; padding-bottom: 15px !important">
       <div class="container">
-        <div class="row">
+        <div class="row">s
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase" id="countdown">Token Generation Event: </h2>
+            <h2 class="section-heading text-uppercase" id="countdown">Token Generation Event</h2>
             <img src="img/logo.png">
             <h5 class="section-subheading text-uppercase" id="f"></h5>           
           </div>
@@ -93,7 +92,7 @@
     </section>
 
 
-    <section  id="purchase" style="padding-top: 15px !important">
+    <section  id="purchase" style="padding-top: 15px !important; padding-bottom: 15px !important">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center" style="padding-bottom: 30px">
@@ -108,7 +107,12 @@
         <button type="button" class="btn btn-secondary" onclick="calculateeth()">Calculate</button>
       </div>
           <div class="col-lg-12 text-center" style="padding-top: 30px">
-              <h5 class="section-subheading text-uppercase" id="sendamt" style="padding-top:20px;display: none;">Send {amt} ETH to the following address:</h5>
+            <div class="col-lg-12 text-center" id="senddiv" style="display: none">
+              <h5 class="section-subheading text-uppercase" id="sendamt" style="padding-top:20px;display: none;padding-bottom: 20px">Send {amt} ETH to the following address: 0X780CB0E90CF9BCA586CCACC7280EA621D0857B7D</h5>
+               <img style="display:inline-block; max-width: 100%; height: auto; padding-top:0" src="img/address.png" />
+            </div>
+        <h3 class="section-subheading text-muted text-center ">For more information, click <a class="js-scroll-trigger" href="#guide">here</a></h3>
+
             </div>
           </div>
         </div>
@@ -121,7 +125,7 @@
             <h2 class="section-heading text-uppercase">Launch Details</h2>
                         <h5 class="section-subheading text-uppercase" style="padding-top:30px" id="balance">Coin Distribution</h5>
            <img style="display:block; max-width: 100%; height: auto; padding-top:30px" src="img/chart.png" />
-                        <h5 class="section-subheading text-uppercase" style="padding-top:50px" id="balance">ICO Guide</h5>
+                        <h5 class="section-subheading text-uppercase" style="padding-top:50px" id="guide">ICO Guide</h5>
 
         <table class="table table-hover table-bordered" style="margin-top: 20px">
           <tbody>

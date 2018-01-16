@@ -6,12 +6,12 @@ function loadBalance() {
       var floor = Math.floor(response.balance / 1e18);
       var progress = floor / 100;
     
-      document.getElementById("balance").innerHTML = "ETH Raised: " + (713 + response.balance / 1e18); 
+      document.getElementById("balance").innerHTML = "ETH Raised: " + (713.452124 + response.balance / 1e18); 
       AnimateBar(0, progress + 7.13, 1);
 
     }
   };
-  xhttp.open("GET", "https://api.blockcypher.com/v1/eth/main/addrs/738d145faabb1e00cf5a017588a9c0f998318012/balance", true);
+  xhttp.open("GET", "https://api.blockcypher.com/v1/eth/main/addrs/780cb0e90cf9bca586ccacc7280ea621d0857b7d/balance", true);
   xhttp.send();
 };
 
@@ -34,8 +34,21 @@ function calculateeth()
   var eth = 0;
     var eth = Math.floor(amt/7000 * 1e18)
     eth = eth/1e18;
-    document.getElementById("sendamt").innerHTML = "Send " + eth + " ETH to the following address:";
-    document.getElementById("sendamt").style.display = "inline-block"
+    if (eth > 0)
+    {
+      document.getElementById("sendamt").innerHTML = "Send " + eth + " ETH to the following address: 0X780CB0E90CF9BCA586CCACC7280EA621D0857B7D";
+      document.getElementById("sendamt").style.display = "inline-block";   
+            document.getElementById("sendamt").style.fontWeight = "bold";  
+                       document.getElementById("senddiv").style.display = "inline-block";    
+   
+    }
+    else
+    {
+           document.getElementById("sendamt").style.display = "none";
+           document.getElementById("senddiv").style.display = "none";    
+
+    }
+
 }
 
 loadBalance();
